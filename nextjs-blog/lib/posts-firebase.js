@@ -36,7 +36,7 @@ export async function getAllPostIds() {
         {
             return {
                 params: {
-                    id: item.id.toString()  // Convert id to string for URL parameter ( I think I can do id: doc.title)
+                    id: item.id.toString()  // Convert id to string for URL parameter
                 }
             }
         }
@@ -65,7 +65,7 @@ export async function getPostData(id) {
                     id: 'id',
                     title: 'error',
                     date: 'error',
-                    contenHtml: "<p><strong>>:(</strong></p>",
+                    contentHtml: "<p><strong>>:(</strong></p>",
                     tags: 'loser'
                 };
             }
