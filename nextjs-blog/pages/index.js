@@ -7,22 +7,9 @@ import Link from 'next/link';
 // Import utility CSS styles
 import utilStyles from '../styles/utils.module.css';
 // Import function to get all blog post data
-import { getSortedPostsData } from '../lib/posts-json';
+import { getSortedPostsData } from '../lib/posts-firebase';
 // Import Date component for formatting dates
-import Date from '../components/date';
- 
-// Next.js function that runs at build time to fetch data for this page
-// This enables Static Site Generation (SSG)
-export async function getStaticProps() {
-  // Get all blog post data sorted by date
-  const allPostsData = getSortedPostsData();
-  // Return the data as props to the component
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+import Date from '../components/date'
 
 // Main Home page component that displays the blog homepage
 export default function Home({ allPostsData }) {
@@ -38,7 +25,7 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, tags }) => (
+          {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>{title}</Link>
                 <br />
@@ -51,4 +38,17 @@ export default function Home({ allPostsData }) {
       </section>
     </Layout>
   );
+}
+
+// Next.js function that runs at build time to fetch data for this page
+// This enables Static Site Generation (SSG)
+export async function getStaticProps() {
+  // Get all blog post data sorted by date
+  const allPostsData = await getSortedPostsData();
+  // Return the data as props to the component
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }

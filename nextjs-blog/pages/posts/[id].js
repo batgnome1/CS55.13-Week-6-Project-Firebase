@@ -1,7 +1,7 @@
 // Import Layout component for consistent page structure
 import Layout from '../../components/layout';
 // Import functions to get post IDs and individual post data
-import { getAllPostIds, getPostData } from '../../lib/posts-json';
+import { getAllPostIds, getPostData } from '../../lib/posts-firebase';
 // Import Head component for page metadata
 import Head from 'next/head';
 // Import Date component for formatting dates
@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
 // This is required for dynamic routes like [id].js
 export async function getStaticPaths() {
   // Get all possible post IDs
-  const paths = getAllPostIds();
+  const paths = await getAllPostIds();
   return {
     paths,
     // fallback: false means any paths not returned by getStaticPaths will result in a 404

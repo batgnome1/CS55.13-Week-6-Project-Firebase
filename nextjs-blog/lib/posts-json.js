@@ -39,7 +39,7 @@ export function getSortedPostsData() {
                 tags: item.tags
             }
         }
-    )
+    );
 }
 
 // Function to get all post IDs for Next.js dynamic routing
@@ -53,7 +53,7 @@ export function getAllPostIds() {
         {
             return {
                 params: {
-                    id: item.id.toString()  // Convert id to string for URL parameter
+                    id: item.id.toString()  // Convert id to string for URL parameter ( I think I can do id: doc.title)
                 }
             }
         }
