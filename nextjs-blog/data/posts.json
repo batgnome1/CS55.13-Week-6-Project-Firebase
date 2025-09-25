@@ -1,0 +1,26 @@
+[
+    {
+        "title": "King Kung Fu!",
+        "date": "2025-09-12",
+        "contentHtml": "<p><img src=\"/images/kingkungfu.jpg\" alt=\"King Kung Fu Screenshot\"></p>\n<p>Enjoy this movie! It has gorilla kung fu.</p>\n<p><a href=\"https://dn720407.ca.archive.org/0/items/king-kung-fu-1976/King%20Kung%20Fu%201976.mp4\" target=\"_blank\">Click Here</a> to watch. </p>",
+        "id": 1,
+        "tags": [" gorilla", " kung-fu", " movie"]
+    },
+
+    {
+        "title": "Mustache",
+        "date": "2025-09-13",
+        "contentHtml": "<p>Is mustache the plural? Or mustaches. What about mustachio? Who knows. </p>\n<p><img src=\"/images/mustache.jpg\" alt=\"mustache\"></p>",
+
+        "id": 2,
+        "tags": [" mystery", " conspiracy", " hoax"]
+    },
+
+    {
+        "title": "Spooky Season Recommendations",
+        "date": "2025-09-11",
+        "contentHtml": "<p>It is officially <strong>Spooky Season</strong> so here are some recommendations for enjoying the season:</p><h3 id=\"books\">Books</h3><ul><li>The Dead Zone by Stephen King</li><li>Hell House by Richard Matheson</li><li>Legion by William Peter Blatty</li><li>Rouge by Mona Awad</li></ul><h3 id=\"movies\">Movies</h3><ul><li>Night of the Creeps</li><li>The &#39;Burbs</li><li>Nosferatu</li><li>Slumber Party Massacre</li></ul><h3 id=\"tv-shows\">TV Shows</h3><ul><li>Supernatural</li><li>Eerie, Indiana</li><li>Beetlejuice </li><li>The X-Files</li></ul>",
+        "id": 3,
+        "tags": [" spooky", " halloween", " list"]
+    }
+]

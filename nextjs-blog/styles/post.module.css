@@ -1,0 +1,19 @@
+.post {
+    background-color: green;
+    color: black;
+    padding: 3rem;
+    border-radius: 1rem;
+    
+}
+
+.lightText {
+  color: black;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
