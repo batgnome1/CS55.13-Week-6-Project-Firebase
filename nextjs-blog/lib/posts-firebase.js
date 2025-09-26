@@ -118,6 +118,7 @@ export async function getPostData(id) {
     const querySnapshot = await getDocs(searchQuery);
     
     // Transform the query results into a JavaScript array of objects
+    
     const jsonObj = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data() }));
 
     // Handle case where no post is found with the given ID
